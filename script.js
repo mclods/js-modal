@@ -1,12 +1,14 @@
 "use strict";
 
 function onShowModalClick() {
-  document.querySelector('[data-testid="modal-dialog"]').showModal();
+  modal.showModal();
 }
 
 function onCloseModalClick() {
-  document.querySelector('[data-testid="modal-dialog"]').close();
+  modal.close();
 }
+
+const modal = document.querySelector('[data-testid="modal-dialog"]');
 
 document
   .querySelector('[data-testid="show-modal-btn-1"]')
