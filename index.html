@@ -15,13 +15,17 @@
   <body>
     <main class="modal-buttons-container">
       <button class="btn" data-testid="show-modal-btn-1">Show Modal 1</button>
-      <button class="btn" data-testid="show-modal-btn-1">Show Modal 2</button>
-      <button class="btn" data-testid="show-modal-btn-1">Show Modal 3</button>
+      <button class="btn" data-testid="show-modal-btn-2">Show Modal 2</button>
+      <button class="btn" data-testid="show-modal-btn-3">Show Modal 3</button>
     </main>
-    <dialog class="modal-dialog" data-testid="modal-dialog" open>
+    <dialog class="modal-dialog" data-testid="modal-dialog">
       <section class="modal-header">
         <p>I'm a modal window 😍</p>
-        <button class="modal-close-btn">X</button>
+        <form method="dialog">
+          <button class="modal-close-btn" data-testid="modal-close-btn">
+            X
+          </button>
+        </form>
       </section>
       <section class="modal-body">
         <p>
