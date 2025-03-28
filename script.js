@@ -4,10 +4,6 @@ function onShowModalClick() {
   modal.showModal();
 }
 
-function onCloseModalClick() {
-  modal.close();
-}
-
 const modal = document.querySelector('[data-testid="modal-dialog"]');
 
 document
@@ -19,6 +15,3 @@ document
 document
   .querySelector('[data-testid="show-modal-btn-3"]')
   .addEventListener("click", onShowModalClick);
-document
-  .querySelector('[data-testid="modal-close-btn"]')
-  .addEventListener("click", onCloseModalClick);
