@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 4rem;
+  font-family: "Boldonse", sans-serif;
+  color: #333;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+.modal-buttons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 12rem;
+  height: 3rem;
+  font-family: "Boldonse", sans-serif;
+  border: none;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:active {
+  cursor: pointer;
+  background-color: #d8d7d7;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-dialog {
+  width: 75vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.modal-close-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 100%;
+}
+
+.modal-close-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  background-color: #e3e3e3;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-close-btn:active {
+  cursor: pointer;
+  background-color: #fff;
+  background-color: #dddddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-body {
+  font-family: arial;
+  font-size: 1.2rem;
+  overflow-y: auto;
+}

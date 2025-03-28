@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <linlk rel="stylesheet" href="styles.css">
-  <title>JS Modal</title>
-</head>
-<body>
-  
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JS Modal</title>
+  </head>
+  <body>
+    <main class="modal-buttons-container">
+      <button class="btn" data-testid="show-modal-btn-1">Show Modal 1</button>
+      <button class="btn" data-testid="show-modal-btn-1">Show Modal 2</button>
+      <button class="btn" data-testid="show-modal-btn-1">Show Modal 3</button>
+    </main>
+    <dialog class="modal-dialog" data-testid="modal-dialog" open>
+      <section class="modal-header">
+        <p>I'm a modal window 😍</p>
+        <button class="modal-close-btn">X</button>
+      </section>
+      <section class="modal-body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          hendrerit pellentesque urna, sit amet facilisis arcu feugiat in. Proin
+          dapibus id mi nec venenatis. Vestibulum tincidunt, magna at gravida
+          hendrerit, nunc tortor pharetra ante, et consectetur metus neque at
+          tellus. Donec leo ligula, rutrum vitae felis nec, ullamcorper accumsan
+          orci. Integer ac nulla sed neque tempor congue ut eu metus. Vivamus
+          nisl nunc, mollis eu fermentum vel, dignissim vitae urna. Curabitur
+          fermentum odio vel felis rhoncus, a tincidunt mi porttitor. Ut purus
+          ex, malesuada quis volutpat sit amet, maximus et nulla. Vivamus quis
+          orci pellentesque, dictum orci ut, mollis nulla. Aliquam vel libero a
+          mauris rutrum posuere.<br /><br />Donec congue vulputate tellus, non
+          bibendum magna maximus sit amet. Etiam eu est at turpis cursus
+          ultrices. Vestibulum convallis egestas ligula nec dignissim. Mauris
+          lobortis, ipsum non tempus auctor, enim odio laoreet purus, eget
+          fringilla arcu tortor a nulla. Mauris quis efficitur libero, sed
+          bibendum augue. Nunc risus mauris, fermentum consectetur nibh ut,
+          molestie feugiat felis. Fusce felis ex, auctor eget ante vitae, varius
+          scelerisque ligula. Sed quis porttitor nisl. Curabitur condimentum
+          nisl vel tellus rutrum gravida. Cras lacus augue, elementum ac arcu
+          sed, condimentum cursus augue. Fusce vel orci vel ligula placerat
+          iaculis. Ut tristique ut metus eget congue.<br /><br />Pellentesque a
+          erat vulputate, venenatis tortor non, dignissim ipsum. Mauris euismod
+          faucibus sagittis. Quisque et nisi sit amet quam volutpat laoreet eget
+          ut velit. Nullam vitae velit et arcu accumsan posuere. Sed hendrerit
+          lacus nec velit tempor interdum. Mauris dapibus non diam eu dapibus.
+          Vivamus ipsum dui, rutrum vitae tellus in, commodo interdum eros.
+        </p>
+      </section>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
 </html>
