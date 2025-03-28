@@ -46,11 +46,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
   padding: 3rem;
   border: none;
   border-radius: 2rem;
+}
+
+.modal-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-header {
@@ -85,6 +87,7 @@ body {
 }
 
 .modal-body {
+  max-height: 25vh;
   font-family: arial;
   font-size: 1.2rem;
   overflow-y: auto;
