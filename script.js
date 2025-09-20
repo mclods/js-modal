@@ -1,10 +1,10 @@
 "use strict";
 
+const modal = document.querySelector('[data-testid="modal-dialog"]');
+
 function onShowModalClick() {
   modal.showModal();
 }
-
-const modal = document.querySelector('[data-testid="modal-dialog"]');
 
 document
   .querySelector('[data-testid="show-modal-btn-1"]')
